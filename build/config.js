@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.networkConfig = void 0;
 exports.networkConfig = {
-    testnet: {
+    amoy: {
         URL: 'https://rpc-amoy.polygon.technology',
-        CONTRACT_ADDRESS: '0xc087766218b885C6283072BA316a2Bc31B5c17db',
+        CONTRACT_ADDRESS: '0x1a4cC30f2aA0377b0c3bc9848766D90cb4404124',
     },
     mainnet: {
         URL: 'https://polygon-rpc.com',

@@ -1,4 +1,4 @@
-export declare function getNetworkFromDid(did: string): "testnet" | "mainnet";
+export declare function getNetworkFromDid(did: string): "amoy" | "mainnet";
 export declare function parseDid(did: string): {
     network: string;
     contractAddress: string;

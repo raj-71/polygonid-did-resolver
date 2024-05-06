@@ -30,10 +30,12 @@ function getResolver() {
                     throw new Error('invalid did provided');
                 }
                 const parsedDid = (0, did_1.parseDid)(did);
+                console.log("parsedDid : ", parsedDid);
                 const provider = new ethers_1.providers.JsonRpcProvider(parsedDid.networkUrl);
                 const registry = new ethers_1.Contract(parsedDid.contractAddress, polygon_did_registry_contract_1.default.abi, provider);
                 // Calling smart contract with getting DID Document
                 const didDocument = yield registry.functions.getDIDDoc(parsedDid.didAddress);
+                console.log("didDocument : ", didDocument);
                 if (!didDocument[0]) {
                     return {
                         didDocument: null,

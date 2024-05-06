@@ -1,5 +1,5 @@
 export declare const networkConfig: {
-    testnet: {
+    amoy: {
         URL: string;
         CONTRACT_ADDRESS: string;
     };
